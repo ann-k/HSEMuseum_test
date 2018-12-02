@@ -1,0 +1,29 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @collective.name %>
+</p>
+
+<p>
+  <strong>Created:</strong>
+  <%= @collective.created %>
+</p>
+
+<p>
+  <strong>Broke up:</strong>
+  <%= @collective.broke_up %>
+</p>
+
+<p>
+  <strong>Bio:</strong>
+  <%= @collective.bio %>
+</p>
+
+<p>
+  <strong>Style:</strong>
+  <%= @collective.style %>
+</p>
+
+<%= link_to 'Edit', edit_collective_path(@collective) %> |
+<%= link_to 'Back', collectives_path %>

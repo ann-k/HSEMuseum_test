@@ -1,0 +1,35 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Collectives</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Created</th>
+      <th>Broke up</th>
+      <th>Bio</th>
+      <th>Style</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @collectives.each do |collective| %>
+      <tr>
+        <td><%= collective.name %></td>
+        <td><%= collective.created %></td>
+        <td><%= collective.broke_up %></td>
+        <td><%= collective.bio %></td>
+        <td><%= collective.style %></td>
+        <td><%= link_to 'Show', collective %></td>
+        <td><%= link_to 'Edit', edit_collective_path(collective) %></td>
+        <td><%= link_to 'Destroy', collective, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Collective', new_collective_path %>

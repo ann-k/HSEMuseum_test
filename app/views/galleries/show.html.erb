@@ -1,0 +1,24 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Title:</strong>
+  <%= @gallery.title %>
+</p>
+
+<p>
+  <strong>Blocked:</strong>
+  <%= @gallery.blocked %>
+</p>
+
+<p>
+  <strong>Private:</strong>
+  <%= @gallery.private %>
+</p>
+
+<p>
+  <strong>User:</strong>
+  <%= @gallery.user_id %>
+</p>
+
+<%= link_to 'Edit', edit_gallery_path(@gallery) %> |
+<%= link_to 'Back', galleries_path %>

@@ -1,0 +1,19 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Artwork:</strong>
+  <%= @placement.artwork_id %>
+</p>
+
+<p>
+  <strong>Gallery:</strong>
+  <%= @placement.gallery_id %>
+</p>
+
+<p>
+  <strong>Order:</strong>
+  <%= @placement.order %>
+</p>
+
+<%= link_to 'Edit', edit_placement_path(@placement) %> |
+<%= link_to 'Back', placements_path %>
