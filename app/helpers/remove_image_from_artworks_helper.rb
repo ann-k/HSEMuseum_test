@@ -1,0 +1,2 @@
+module RemoveImageFromArtworksHelper
+end
