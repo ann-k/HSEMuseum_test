@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2018_12_02_225345) do
+ActiveRecord::Schema.define(version: 2018_12_05_211552) do
 
   create_table "annotations", force: :cascade do |t|
     t.text "body"
@@ -25,23 +25,22 @@ ActiveRecord::Schema.define(version: 2018_12_02_225345) do
     t.string "name"
     t.date "born"
     t.date "died"
-    t.string "image"
     t.text "bio"
     t.string "style"
     t.integer "gallery_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.string "avatar"
   end
 
   create_table "artworks", force: :cascade do |t|
     t.string "title"
     t.date "year"
-    t.string "image"
     t.boolean "blocked"
-    t.string "artist_id"
-    t.string "integer"
+    t.integer "artist_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.string "image"
   end
 
   create_table "collaborations", force: :cascade do |t|

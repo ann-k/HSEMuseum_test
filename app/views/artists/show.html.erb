@@ -16,11 +16,6 @@
 </p>
 
 <p>
-  <strong>Image:</strong>
-  <%= @artist.image %>
-</p>
-
-<p>
   <strong>Bio:</strong>
   <%= @artist.bio %>
 </p>
@@ -34,6 +29,8 @@
   <strong>Gallery:</strong>
   <%= @artist.gallery_id %>
 </p>
+
+<%= image_tag(@artist.avatar_url.to_s) %>
 
 <%= link_to 'Edit', edit_artist_path(@artist) %> |
 <%= link_to 'Back', artists_path %>

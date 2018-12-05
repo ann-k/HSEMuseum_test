@@ -11,11 +11,6 @@
 </p>
 
 <p>
-  <strong>Image:</strong>
-  <%= @artwork.image %>
-</p>
-
-<p>
   <strong>Blocked:</strong>
   <%= @artwork.blocked %>
 </p>
@@ -26,9 +21,11 @@
 </p>
 
 <p>
-  <strong>Integer:</strong>
-  <%= @artwork.integer %>
+  <strong>Image:</strong>
+  <%= @artwork.image %>
 </p>
+
+<%= image_tag(@artwork.image_url.to_s) %>
 
 <%= link_to 'Edit', edit_artwork_path(@artwork) %> |
 <%= link_to 'Back', artworks_path %>

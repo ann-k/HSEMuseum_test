@@ -27,11 +27,6 @@
   </div>
 
   <div class="field">
-    <%= form.label :image %>
-    <%= form.text_field :image %>
-  </div>
-
-  <div class="field">
     <%= form.label :bio %>
     <%= form.text_area :bio %>
   </div>
@@ -44,6 +39,11 @@
   <div class="field">
     <%= form.label :gallery_id %>
     <%= form.number_field :gallery_id %>
+  </div>
+
+  <div class="field">
+    <%= form.label :avatar %>
+    <%= form.file_field :avatar %>
   </div>
 
   <div class="actions">
